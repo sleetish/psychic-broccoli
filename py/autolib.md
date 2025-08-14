@@ -37,7 +37,7 @@ dataset.commit("Initial import")
 ```
 
 mail-parser
-```
+```python
 from mailparser import parse_from_file
 from pathlib import Path
 
@@ -50,7 +50,7 @@ for eml_file in email_dir.glob("*.eml"):
 ```
 
 boltons
-```
+```python
 from boltons.cacheutils import LRU
 import requests
 
@@ -65,7 +65,7 @@ def get_data(page):
 ```
 
 plumbum
-```
+```python
 from plumbum import local
 
 git = local["git"]
